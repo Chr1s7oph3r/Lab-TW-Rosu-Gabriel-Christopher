@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>City Explorer - F1 Edition</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="logo">
+            <h1>🏁 City Explorer</h1>
+        </div>
+        <nav class="menu">
+            <a href="#destinatii">Circuite</a>
+            <a href="#planifica">Planifică</a>
+            <a href="#recomandari">Ghid</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="destinatii">
+            <h2 class="section-title">Destinații de Top în F1</h2>
+            <div class="cards">
+                <article class="card featured">
+                    <span class="badge">Pole Position</span>
+                    <h3>Monte Carlo</h3>
+                    <p class="country">🇲🇨 Monaco</p>
+                    <p>Perla coroanei din Formula 1. Străduțe înguste, iahturi de lux și cel mai faimos ac de păr din motorsport (Fairmont).</p>
+                    <p class="duration">⏱️ <strong>Durata recomandată:</strong> 4 zile (Race Weekend)</p>
+                </article>
+
+                <article class="card">
+                    <h3>Monza</h3>
+                    <p class="country">🇮🇹 Italia</p>
+                    <p>„Templul Vitezei” de lângă Milano. Atmosfera creată de fanii Tifosi este o experiență pe care nu o poți rata.</p>
+                    <p class="duration">⏱️ <strong>Durata recomandată:</strong> 3 zile (Race Weekend)</p>
+                </article>
+
+                <article class="card">
+                    <h3>Suzuka</h3>
+                    <p class="country">🇯🇵 Japonia</p>
+                    <p>Singurul circuit în formă de cifra 8 din calendar, faimos pentru virajele de mare viteză 130R și fanii incredibil de pasionați.</p>
+                    <p class="duration">⏱️ <strong>Durata recomandată:</strong> 5 zile (include vizită în Tokyo)</p>
+                </article>
+
+                <article class="card">
+                    <h3>Austin</h3>
+                    <p class="country">🇺🇸 SUA</p>
+                    <p>Circuit of the Americas (COTA) oferă spectacol pur american, diferențe uriașe de nivel și cele mai bune grătare din Texas.</p>
+                    <p class="duration">⏱️ <strong>Durata recomandată:</strong> 4 zile (Race Weekend)</p>
+                </article>
+
+                <article class="card">
+                    <h3>Spa-Francorchamps</h3>
+                    <p class="country">🇧🇪 Belgia</p>
+                    <p>Un circuit istoric ascuns în pădurea Ardenilor. Curba Eau Rouge - Raidillon trebuie văzută măcar o dată în viață.</p>
+                    <p class="duration">⏱️ <strong>Durata recomandată:</strong> 3 zile (Race Weekend)</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="planifica">
+            <h2 class="section-title">Creează-ți Itinerariul Personalizat</h2>
+            <div class="form-wrapper">
+                <form class="booking-form">
+                    <div class="form-group">
+                        <label for="name">Cum te numești?</label>
+                        <input id="name" name="name" type="text" placeholder="Numele fanului...">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="destination">Ce circuit vrei să explorezi?</label>
+                        <select id="destination" name="destination">
+                            <option value="">Alege o destinație...</option>
+                            <option value="Monaco">Monaco Grand Prix</option>
+                            <option value="Monza">Italian Grand Prix</option>
+                            <option value="Suzuka">Japanese Grand Prix</option>
+                            <option value="Austin">US Grand Prix</option>
+                            <option value="Spa">Belgian Grand Prix</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="days">Câte zile vei sta în acel oraș?</label>
+                        <input id="days" name="days" type="number" min="1" placeholder="Numărul de zile...">
+                    </div>
+
+                    <button type="submit">Generează Planul de Călătorie 🗺️</button>
+                </form>
+            </div>
+        </section>
+
+        <section id="recomandari">
+            <h2 class="section-title">Ghid pentru Weekendul de Cursă</h2>
+            <ul class="f1-tips">
+                <li><strong>Descarcă aplicația oficială:</strong> Mașinile trec extrem de repede. Folosește aplicația F1 pe telefon pentru a urmări comentariile live și timpii pe sectoare.</li>
+                <li><strong>Ziua de Joi este secretul:</strong> Vino la circuit cu o zi înainte de antrenamente pentru faimosul <em>Pit Lane Walk</em>. Ai cele mai mari șanse să primești autografe de la piloți!</li>
+                <li><strong>Explorează vineri, stai jos duminică:</strong> Vineri poți să te plimbi și să vezi cursa din diferite unghiuri. Duminică, fii devreme la locul tău pentru a prinde parada piloților.</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>Proiect Tehnologii Web | City Explorer F1 | Realizat de Rosu Gabriel-Christopher, 2026</p>
+    </footer>
+</body>
+</html>
