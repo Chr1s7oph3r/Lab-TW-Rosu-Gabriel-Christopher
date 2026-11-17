@@ -1,0 +1,244 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #1a1a1a;
+    line-height: 1.6;
+}
+
+main {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.section-title {
+    font-size: 2.2rem;
+    color: #111;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-style: italic; 
+    border-left: 6px solid #e10600; 
+    padding-left: 15px;
+}
+
+section {
+    margin-bottom: 80px;
+    padding-top: 20px;
+}
+
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #111111;
+    color: #ffffff;
+    border-bottom: 4px solid #e10600;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo h1 {
+    font-size: 1.8rem;
+    font-weight: 800;
+    font-style: italic;
+    letter-spacing: 1px;
+}
+
+.menu {
+    display: flex;
+    gap: 30px;
+}
+
+.menu a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
+}
+
+.menu a:hover {
+    color: #e10600;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+}
+
+.card {
+    background-color: #ffffff;
+    padding: 25px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease, border-color 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.card h3 {
+    color: #111;
+    font-size: 1.5rem;
+    font-weight: 800;
+    font-style: italic;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+.country {
+    font-weight: bold;
+    color: #777;
+    margin-bottom: 15px;
+}
+
+.duration {
+    margin-top: auto;
+    padding-top: 15px;
+    border-top: 1px solid #eee;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    border-color: #e10600;
+    box-shadow: 0 10px 20px rgba(225, 6, 0, 0.1);
+}
+
+.card.featured {
+    border: 2px solid #e10600;
+    background-color: #fff9f9;
+    position: relative;
+}
+
+.badge {
+    position: absolute;
+    top: -12px;
+    right: 20px;
+    background-color: #e10600;
+    color: #fff;
+    padding: 4px 15px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.form-wrapper {
+    display: flex;
+}
+
+.booking-form {
+    background-color: #ffffff;
+    padding: 35px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    border-top: 5px solid #111;
+    width: 100%;
+    max-width: 500px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.booking-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+}
+
+.booking-form input,
+.booking-form select {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.booking-form input:focus, 
+.booking-form select:focus {
+    outline: none;
+    border-color: #e10600;
+    box-shadow: 0 0 0 3px rgba(225, 6, 0, 0.1);
+}
+
+.booking-form button {
+    width: 100%;
+    padding: 15px;
+    background-color: #e10600;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+.booking-form button:hover {
+    background-color: #b30500;
+}
+
+.f1-tips {
+    list-style-type: none;
+}
+
+.f1-tips li {
+    background-color: #fff;
+    padding: 20px 20px 20px 50px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-left: 5px solid #111;
+    position: relative;
+    font-size: 1rem;
+}
+
+.f1-tips li::before {
+    content: '';
+    position: absolute;
+    left: 15px;
+    top: 25px;
+    width: 12px;
+    height: 12px;
+    background-image: conic-gradient(#111 90deg, #fff 90deg 180deg, #111 180deg 270deg, #fff 270deg);
+    background-size: 6px 6px;
+    border: 1px solid #111;
+}
+
+.site-footer {
+    text-align: center;
+    padding: 30px;
+    background-color: #111111;
+    color: #888;
+    font-size: 0.9rem;
+    border-top: 4px solid #e10600;
+    margin-top: 40px;
+    text-transform: uppercase;
+    font-weight: bold;
+}

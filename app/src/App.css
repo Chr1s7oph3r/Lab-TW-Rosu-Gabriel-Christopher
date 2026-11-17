@@ -1,0 +1,96 @@
+main {
+  max-width: 720px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+h1 {
+  font-size: 1.9rem;
+  margin-bottom: 0.4rem;
+}
+.rezumat {
+  color: #4b5563;
+  margin-top: 0;
+  margin-bottom: 1.2rem;
+}
+.formular {
+  display: flex;
+  gap: 0.6em;
+  margin-bottom: 1.5rem;
+}
+.formular input {
+  flex: 1;
+  padding: 0.5rem 0.7rem;
+  border: 1px solid #c3c7cf;
+  border-radius: 7px;
+  font: inherit;
+  min-width: 0;
+}
+.formular button {
+  padding: 0.5rem 0.9rem;
+  border: none;
+  border-radius: 7px;
+  background: #111;
+  color: #fff;
+  font: inherit;
+  cursor: pointer;
+}
+.info {
+  padding: 0.8rem;
+  border-radius: 9px;
+  background: #f3f4f6;
+}
+
+
+.lista {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+}
+.card {
+  border: 2px solid #ddd;
+  border-radius: 6px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+.card h3 {
+  margin: 0 0 5px 0;
+
+  text-transform: uppercase;
+  font-style: italic;
+  font-weight: 900;
+  color: #111; 
+}
+.card .tara, .card .zile {
+  margin: 0;
+  color: #555;
+  font-size: 0.95rem;
+  font-weight: bold;
+}
+.card button {
+  margin-top: auto; 
+  width: 100%;
+  padding: 0.6rem;
+  border: none;
+  border-radius: 4px;
+  background: #111;
+  color: #fff;
+  font: inherit;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.card button.btn-sterge, 
+.card.vizitat button.btn-sterge {
+  margin-top: 8px;
+  background: #444; 
+}
+
+.card.vizitat {
+  background: #fff9f9;
+  border-color: #e10600;
+}
+.card.vizitat button {
+  background: #e10600; 
+}
