@@ -3,7 +3,7 @@ import { createRoot } from 'react-dom/client'
 import './index.css'
 import App from './App.jsx'
 
-// Toate importurile tale noi trebuie să fie aici, sus:
+
 import { destinatii } from './data/destinatii.js'
 import {
   getOrase, getNevizitate, totalZile, formatDestinatie, numarPeTara, sortDupaZile,
@@ -11,17 +11,17 @@ import {
 } from './utils/destinatii.js'
 import { fetchUsers, fetchUserById } from './api/orase.js'
 
-// Apoi vine logica de React:
+
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <App />
   </StrictMode>,
 )
 
-// ===== Laboratorul 2 =====
+
 console.log('L2 Merge!')
 
-// --- Exercițiul 1 ---
+
 console.log('L2 Ex. 1 orașe:', getOrase(destinatii))
 const nevizitate = getNevizitate(destinatii)
 console.log('L2 Ex. 1 nevizitate:', nevizitate.length)
@@ -30,8 +30,8 @@ console.log(destinatii.map(formatDestinatie).join('\n'))
 console.log('L2 Ex. 1 pe țară:', numarPeTara(destinatii))
 console.log('L2 Ex. 1 cea mai lungă vizită:', sortDupaZile(destinatii)[0].oras)
 
-// --- Exercițiul 2 ---
-const dupaMarcare = marcheazaVizitat(destinatii, '2') // Am pus id 2 pentru Monza
+
+const dupaMarcare = marcheazaVizitat(destinatii, '2') 
 console.log('L2 Ex. 2 original:', destinatii[1].vizitat, ', listă nouă:', dupaMarcare[1].vizitat)
 console.log('L2 Ex. 2 element refolosit:', destinatii[0] === dupaMarcare[0])
 
@@ -42,7 +42,7 @@ console.log('L2 Ex. 2 după adăugare: original', destinatii.length, ', listă n
 const dupaStergere = stergeDestinatie(dupaAdaugare, '7')
 console.log('L2 Ex. 2 după ștergere:', dupaStergere.length)
 
-// --- Exercițiul 3 ---
+
 async function loadOrase() {
   try {
     const users = await fetchUsers()
